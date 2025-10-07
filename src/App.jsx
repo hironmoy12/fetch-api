@@ -8,6 +8,19 @@ import {
   getAllUsers,
 } from "./service/GetAllPost";
 import "./App.css";
+import PostCard from "./components/PostCard";
+import CommentCard from "./components/CommentCard";
+
+
+
+// To-do List: date : - 6th oct 2025
+// 1. Write custom object (use 5 categories )
+// 2. Create a styles card for products...
+// 3. create a page for products, where all products will be displayed in a card style.
+// 4. create a filter section,on the top of all profuct listing, it should filter based on triger..
+// 5. create a state for price,
+// 6. increase and decrease price based on the button click.
+
 
 function App() {
   const [comments, setComments] = useState([]);
@@ -42,6 +55,7 @@ function App() {
 
   const getUsers = async () => {
     const data = await getAllUsers();
+    console.log("user data", data);
     setUsers(data);
   };
 
@@ -59,32 +73,16 @@ function App() {
       {/* ---------- POSTS SECTION ---------- */}
       <h1>Posts</h1>
       <div className="posts-container">
-        {posts.map((item) => (
-          <article key={item.id} className="post-card">
-            <h3 className="post-title">{item.title}</h3>
-            <div className="post-meta">
-              ID: <span className="post-id">{item.id}</span>
-            </div>
-            <p className="post-body">{item.body}</p>
-          </article>
+        {posts.map((item,index) => (
+         <PostCard key={index} item={item} />
         ))}
       </div>
 
       {/* ---------- COMMENTS SECTION ---------- */}
       <h1>Comments</h1>
       <div className="comments-container">
-        {comments.map((item) => (
-          <article key={item.id} className="comment-card">
-            <h3 className="comment-title">{item.name}</h3>
-            <div className="comment-meta">
-              ID: <span className="comment-id">{item.id}</span>
-            </div>
-            <p className="comment-body">{item.body}</p>
-            <p className="comment-email">
-              <strong>Email:</strong>{" "}
-              <a href={`mailto:${item.email}`}>{item.email}</a>
-            </p>
-          </article>
+        {comments.map((item,index) => (
+           <CommentCard key={index} item={item} />
         ))}
       </div>
 
@@ -188,6 +186,7 @@ function App() {
     </tbody>
   </table>
 </div>
+
 
 
 

@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "name": "Chocolate Bar",
+    "price": 3.50,
+    "category": "chocolate"
+  },
+  {
+    "id": 2,
+    "name": "Peanut Butter Cup",
+    "price": 1.99,
+    "category": "chocolate"
+  },
+  {
+    "id": 3,
+    "name": "LED Monitor",
+    "price": 129.99,
+    "category": "electronics"
+  },
+  {
+    "id": 4,
+    "name": "Gummy Bears",
+    "price": 2.50,
+    "category": "chocolate"
+  },
+  {
+    "id": 5,
+    "name": "Smartphone",
+    "price": 499.99,
+    "category": "electronics"
+  },
+  {
+    "id": 6,
+    "name": "Milk Chocolate",
+    "price": 4.99,
+    "category": "chocolate"
+  },
+  {
+    "id": 7,
+    "name": "Gaming Laptop",
+    "price": 1599.99,
+    "category": "electronics"
+  },
+  {
+    "id": 8,
+    "name": "Caramel Fudge",
+    "price": 3.80,
+    "category": "chocolate"
+  },
+  {
+    "id": 9,
+    "name": "Wireless Mouse",
+    "price": 19.99,
+    "category": "electronics"
+  },
+  {
+    "id": 10,
+    "name": "Chocolate Chip Cookies",
+    "price": 5.00,
+    "category": "chocolate"
+  }
+
+]
+
